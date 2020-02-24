@@ -1,4 +1,4 @@
-```
+````
 #include<stdio.h>
 
 int main() {
@@ -7,4 +7,4 @@ int main() {
 		printf("%d\n", A + B);
 	}
 }
-```
+````
