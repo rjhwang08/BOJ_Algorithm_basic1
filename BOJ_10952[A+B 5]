@@ -1,0 +1,24 @@
+풀이1
+#include<stdio.h>
+
+int main() {
+	int A, B;
+	while (true) {
+		scanf("%d %d", &A, &B);
+		if (A == 0 && B == 0) break;
+		printf("%d\n", A + B);
+	}
+}
+===================================
+풀이2
+#include<stdio.h>
+
+int main() {
+	int A, B;
+	while (true) {
+		scanf("%d %d", &A, &B);
+		printf("%d\n", A || B);
+		if ((A || B) == 0) break;
+		printf("%d\n", A + B);
+	}
+}
