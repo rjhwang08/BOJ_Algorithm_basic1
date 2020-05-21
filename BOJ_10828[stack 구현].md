@@ -59,3 +59,51 @@ int main() {
 }
 ```
 - 구조체와 클래스 차이
+
+```java
+package practice;
+
+import java.io.*;
+
+public class Main {
+		public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		int N = Integer.parseInt(br.readLine());
+		int[] stack = new int[10000];
+		int size = 0;
+		
+		for(int i=0; i<N; i++) {
+			String input = br.readLine();
+			String[] line = input.split(" ");
+			
+			if(line[0].equals("push")) {
+				stack[size++] = Integer.parseInt(line[1]);
+			}
+			
+			else if(line[0].equals("pop")) {
+				if(size > 0)
+					bw.write(String.valueOf(stack[--size]) + "\n");
+				else bw.write("-1\n");
+				
+			}
+			
+			else if(line[0].equals("size")) {
+				bw.write(String.valueOf(size) + "\n");
+			}
+			
+			else if(line[0].equals("empty")) {
+				if(size == 0) bw.write("1\n");
+				else bw.write("0\n");
+			}
+			
+			else if(line[0].equals("top")) {
+				if(size == 0) bw.write("-1\n");
+				else bw.write(String.valueOf(stack[size-1]) + "\n");
+			}
+		}
+		bw.close();
+	}
+}
+```
+- BufferedWriter는 buffer에 대기후 close()에서 출력 **나중에 추가
