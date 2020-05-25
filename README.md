@@ -1,6 +1,6 @@
 BOJ 알고리즘 문제풀이 repo
 =========================
-### 더도 말고 하루 한 문제씩이라도 좋으니 꾸준히..!
+### 더도 말고 하루 한 문제씩이라도 꾸준히..!
 ### 다른 정답코드는 BOJ 내 소스에서 확인하기
 
 #### JAVA 자주 쓰는 문법 정리
@@ -27,13 +27,28 @@ String nextLine() // '\n'을 포함하는 한 라인을 읽고 '\n' 빼고 나�
 
 - 입출력 - BufferedReader / BufferedWriter (버퍼를 이용해서 읽고 쓰는 함수 - Scanner보다 빠름)
   
-  [BufferedReader/BufferedWriter 설명](https://jhnyang.tistory.com/92)
-  
+  [참고 1](https://jhnyang.tistory.com/92)
+  [참고 2](https://coding-factory.tistory.com/251)
+
+1. 클래스 호출 및 객체 생성(+ main 문에 예외처리 throws IOException 꼭 넣어줘야 함!!)
 ```java
-//
 import java.io.*;
 
-//
+//객체 생성
 BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+```
+
+2. BufferedReader 사용법
+```java
+String s = br.readLine();   // 라인 단위로 읽음(String 리턴)
+int i = Integer.parseInt(br.readLine()); // Int형으로 형변환
+```
+
+3. BufferedWriter 사용법
+```java
+String s = "abcdefg";
+bw.write(s+"\n");  // 출력(자동개행 없으므로 +"\n")
+bw.flush();        // 남아있는 데이터를 모두 출력시킴
+bw.close();        // 스트림을 닫음
 ```
