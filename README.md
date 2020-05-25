@@ -44,7 +44,7 @@ BOJ 알고리즘 문제풀이 repo
 >String s = br.readLine();   // 라인 단위로 읽음(String 리턴)
 >int i = Integer.parseInt(br.readLine()); // Int형으로 형변환
 >```
-
+>
 >3. BufferedWriter 사용법
 >```java
 >String s = "rjhwang";
