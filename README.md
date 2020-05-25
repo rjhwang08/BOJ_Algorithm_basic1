@@ -47,7 +47,7 @@ BOJ 알고리즘 문제풀이 repo
 
 >3. BufferedWriter 사용법
 >```java
->String s = "abcdefg";
+>String s = "rjhwang";
 >bw.write(s+"\n");  // 출력(자동개행 없으므로 +"\n")
 >bw.flush();        // 남아있는 데이터를 모두 출력시킴
 >bw.close();        // 스트림을 닫음
