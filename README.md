@@ -3,7 +3,9 @@ BOJ 알고리즘 문제풀이 repo
 ### 더도 말고 하루 한 문제씩이라도 꾸준히..!
 ### 다른 정답코드는 BOJ 내 소스에서 확인하기
 ------------------------------------------------
-[JAVA 단축키 모음](https://lookingfor.tistory.com/entry/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-%EC%9C%A0%EC%9A%A9%ED%95%9C-%EB%8B%A8%EC%B6%95%ED%82%A4-%EC%A0%95%EB%A6%AC)
+[JAVA 단축키 모음1](https://lookingfor.tistory.com/entry/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-%EC%9C%A0%EC%9A%A9%ED%95%9C-%EB%8B%A8%EC%B6%95%ED%82%A4-%EC%A0%95%EB%A6%AC)
+
+[JAVA 단축키 모음2](https://gangzzang.tistory.com/entry/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4Eclipse-%EC%9C%A0%EC%9A%A9%ED%95%9C-%EB%8B%A8%EC%B6%95%ED%82%A4)
 ### JAVA 자주 쓰는 문법 정리
 - 입출력 - Scanner 클래스
 
