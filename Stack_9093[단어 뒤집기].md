@@ -28,14 +28,43 @@ public class Main {
 				}
 			}
 		}
+		bw.flush();
 		bw.close();
 	}
 }
 ```
 - 자바 String에서 인덱스를 통해 접근하기 위해서는 항상 'charAt'을 사용할 것
 
+2. Java(스택사용 X)
+```java
+import java.io.*;
+import java.util.*;
 
-2. C++
+public class Main {
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		int T = Integer.parseInt(br.readLine());
+		
+		for(int i=0; i<T; i++) {
+			String input = br.readLine();
+			String[] line = input.split(" ");
+			
+			for(int j=0; j<line.length; j++) {
+				int len = line[j].length() - 1;
+				while(len >= 0)
+					bw.write(line[j].charAt(len--));
+				bw.write(" ");
+			}
+			bw.write("\n");
+		}
+		bw.flush();
+		bw.close();
+	}
+}
+```
+
+3. C++
 ```c++
 #include<stdio.h>
 #include<iostream>
