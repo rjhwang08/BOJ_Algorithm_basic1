@@ -17,11 +17,11 @@ public class Main {
 		for(int i=0; i<n; i++)
 			arr[i] = sc.nextInt();
 		
-		int num = 1;
+		int num = 0;
 		for(int x : arr) {
-			if(x >= num) {
-				while(x >= num) {
-					stack.push(num++);
+			if(x > num) {
+				while(x > num) {
+					stack.push(++num);
 					sb.append("+\n");
 				}
 				stack.pop();
