@@ -1,4 +1,7 @@
-1. JAVA
+[1406](https://www.acmicpc.net/problem/1406)  
+- 시간복잡도를 항상 고려할 것!!
+
+1. Java
 ```java
 import java.util.*;
 import java.io.*;
