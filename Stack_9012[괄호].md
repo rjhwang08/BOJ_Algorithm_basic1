@@ -1,6 +1,4 @@
-- 스택 없이도 해결가능
-
-1. JAVA
+1. Java(스택 사용 O)
 ```java
 import java.util.*;
 import java.io.*;
@@ -39,6 +37,39 @@ public class Main {
 				bw.write("NO"+"\n");
 		}
 		bw.close();
+	}
+}
+```
+
+2. Java(스택 사용 X)
+```java
+import java.io.*;
+
+public class Main {
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		int T = Integer.parseInt(br.readLine());
+		
+		for(int i=0; i<T; i++) {
+			String input = br.readLine();
+			int cnt = 0;
+			for(int j=0; j<input.length(); j++) {
+				if(input.charAt(j) == '(')
+					cnt++;
+				else if(input.charAt(j) == ')') {
+					if(cnt == 0) {
+						cnt--;
+						break;
+					} else cnt--;
+				}
+			}
+			if(cnt == 0) bw.write("YES\n");
+			else bw.write("NO\n");
+		}
+		bw.flush();
+		bw.close();
+		br.close();
 	}
 }
 ```
