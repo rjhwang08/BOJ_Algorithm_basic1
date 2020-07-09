@@ -1,5 +1,6 @@
-1. JAVA
+[1874](https://www.acmicpc.net/problem/1874)
 
+1. JAVA
 - [BufferedWriter를 사용하면 '출력초과'가 발생하는 이유](https://www.acmicpc.net/board/view/50019)
 
 ```java
