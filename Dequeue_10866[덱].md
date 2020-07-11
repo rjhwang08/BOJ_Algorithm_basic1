@@ -1,7 +1,7 @@
 [10866](https://www.acmicpc.net/problem/10866)
 - 덱은 스택 또는 큐로도 사용할 수 있다.
 
-1. JAVA
+1. Java
 ```java
 	import java.io.*;
 	import java.util.*;
