@@ -1,5 +1,6 @@
-1. JAVA (출력 시 형변환 주의!!)
+[1158](https://www.acmicpc.net/problem/1158)
 
+1. Java (출력 시 형변환 주의!!)
 ```java
 import java.util.*;
 import java.io.*;
