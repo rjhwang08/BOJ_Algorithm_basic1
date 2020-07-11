@@ -26,42 +26,33 @@ public class Main {
 				deque.offerLast(num);
 			}
 			else if(order[0].equals("pop_front")) {
-				if (deque.isEmpty()) {
+				if (deque.isEmpty())
 					bw.write("-1\n");
-		} else {
-			bw.write(deque.pollFirst().toString() + "\n");
-		}
+				else bw.write(deque.pollFirst().toString() + "\n");
 			}
 			else if(order[0].equals("pop_back")) {
-				if (deque.isEmpty()) {
+				if (deque.isEmpty())
 					bw.write("-1\n");
-		} else {
-			bw.write(deque.pollLast().toString() + "\n");
-		}
+				else bw.write(deque.pollLast().toString() + "\n");
 			}
-			else if(order[0].equals("size")) {
+			else if(order[0].equals("size"))
 				bw.write(String.valueOf(deque.size()) + "\n");
-			}
 			else if(order[0].equals("empty")) {
-				if (deque.isEmpty()) {
+				if (deque.isEmpty())
 					bw.write("1\n");
-		} else {
-			bw.write("0\n");
-		}
+				else bw.write("0\n");
 			}
 			else if(order[0].equals("front")) {
-				if (deque.isEmpty()) {
+				if (deque.isEmpty())
 					bw.write("-1\n");
-		} else {
-			bw.write(deque.peekFirst().toString() + "\n");
-		}
+				else
+					bw.write(deque.peekFirst().toString() + "\n");
 			}
 			else if(order[0].equals("back")) {
-				if (deque.isEmpty()) {
+				if (deque.isEmpty())
 					bw.write("-1\n");
-		} else {
-			bw.write(deque.peekLast().toString() + "\n");
-		}
+				else
+					bw.write(deque.peekLast().toString() + "\n");
 			}
 		}
 		bw.flush();
