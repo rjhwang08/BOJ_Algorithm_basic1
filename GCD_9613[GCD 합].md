@@ -2,7 +2,7 @@
 
 - 항상 입력 범위를 확인하고 1.시간 2.자료형 크기 고려하기!!
 
-1. JAVA
+1. Java
 ```java
 import java.io.*;
 import java.util.*;
