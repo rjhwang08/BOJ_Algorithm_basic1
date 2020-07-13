@@ -1,0 +1,25 @@
+[11005](https://www.acmicpc.net/problem/11005)
+
+1. Java
+```java
+import java.io.*;
+import java.util.*;
+
+public class Main {
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringBuilder sb = new StringBuilder();
+		String[] input = br.readLine().split(" ");
+		int N = Integer.parseInt(input[0]);
+		int B = Integer.parseInt(input[1]);
+		while(N != 0) {
+			if(N%B >= 10)
+				sb.append((char)('A'+N%B-10));
+			else sb.append(N%B);
+			N /= B;
+		}
+		System.out.println(sb.reverse());
+		br.close();
+	}
+}
+```
